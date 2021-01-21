@@ -1,0 +1,14 @@
+section.main-content
+
+  form#formFileUpload.form-file-upload.box(enctype="multipart/form-data")
+  
+    .file-drop-container
+      .file-drop-icon
+        include ../../assets/images/icon-upload-file.svg
+      .file-drop-title Drag your file here
+      .file-drop-or or
+      .box__input
+      label.file-drop-label Select file
+        input(class="file-drop-input" type="file" name="files[]" id="formFileUploadFile" data-multiple-caption="{count} files selected" multiple) 
+      .file-drop-descr You can drag and drop or upload just 1 file or 1 archive
+      .file-drop-new-name 

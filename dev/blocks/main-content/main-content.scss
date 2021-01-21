@@ -1,0 +1,81 @@
+.main-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  background-color: $color-white;
+}
+
+.main-content__title {
+  font-size: 1.5rem;
+  font-family: $font-main-regular;
+  color: $color-blue;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.25);
+}
+
+//
+.file-drop-container {
+  width: 26.875rem;
+  height: 23.125rem;
+  border-radius: 0.75rem;
+  border: 0.125rem dashed $color-grey;
+  text-align: center;
+  transition: $transition-main;
+}
+
+.is-dragover .file-drop-container {
+  border: 0.125rem dashed $color-blue;
+
+  svg {
+    fill: $color-blue;
+  }
+}
+
+.file-drop-icon {
+  margin: 4.375rem auto 0 auto;
+  width: 6.25rem;
+  height: 5.375rem;
+
+  svg {
+    display: block;
+    width: 100%;
+    height: 100%;
+    fill: $color-grey;
+    transition: $transition-main;
+  }
+}
+
+.file-drop-title {
+  margin-top: 1.25rem;
+  font-size: 1.125rem;
+  font-weight: bold;
+  line-height: 1.3125rem;
+}
+
+.file-drop-or {
+  font-size: 1rem;
+}
+
+.file-drop-label {
+  display: block;
+  margin-bottom: 1.25rem;
+  font-size: 1rem;
+  color: $color-blue;
+  cursor: pointer;
+}
+
+.file-drop-input {
+  display: none;
+}
+
+.file-drop-descr {
+  margin: 0 auto;
+  max-width: 17.5rem;
+  font-size: 0.875rem;
+}
+
+.file-drop-new-name {
+  margin-top: 1.125rem;
+  font-size: 1rem;
+}
